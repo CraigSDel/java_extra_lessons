@@ -5,6 +5,7 @@ import java.lang.Integer;
 // Craig Stroberg - https://craig-stroberg.web.app
 
 public class Runner {
+
 	private static String name;
 	private static Integer age;
 
