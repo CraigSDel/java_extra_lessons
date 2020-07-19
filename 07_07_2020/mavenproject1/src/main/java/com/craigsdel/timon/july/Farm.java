@@ -25,6 +25,8 @@ public class Farm {
 
     public static void main(String[] args) throws ParseException {
         String fileName = "farm.txt";
+        Animal[] animals = new Animal[10];
+        
         try {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(fileName));
             String fileLine = bufferedReader.readLine();
@@ -58,6 +60,17 @@ public class Farm {
                 System.out.println(animal);
                 //Now try to read the next line
                 fileLine = bufferedReader.readLine();
+                animals[0] = animal;
+                animals[1] = animal;
+                animals[2] = animal;
+                animals[3] = animal;
+                animals[4] = animal;
+                animals[5] = animal;
+                animals[6] = animal;
+                animals[7] = animal;
+                animals[8] = animal;
+                animals[9] = animal;
+                System.out.println(animals);
             }
         } catch (IOException exception) {
             System.out.println(exception.getMessage());
