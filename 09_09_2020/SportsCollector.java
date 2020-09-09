@@ -10,18 +10,17 @@ public class SportsCollector {
     private String sport;
     private int schoolNumber;
     private String venue;
-    private static String entryCode;
 
     public static void main(String[] args) {
-
-        System.out.println(entryCode + " is your entry code.");
+        SportsCollector sportsCollector = new SportsCollector("Hockey", 5, "Jome");
+        System.out.println(sportsCollector.getEntryCode());
+        System.out.println(sportsCollector + " is your entry code.");
     }
 
-    public SportsCollector(String sport, int schoolNumber, String venue, String entryCode) {
+    public SportsCollector(String sport, int schoolNumber, String venue) {
         this.sport = sport;
         this.schoolNumber = schoolNumber;
         this.venue = venue;
-        this.entryCode = entryCode;
     }
 
     public String getSport() {
@@ -49,16 +48,12 @@ public class SportsCollector {
     }
 
     public String getEntryCode() {
-        return entryCode;
-    }
-
-    public void setEntryCode(String entryCode) {
-        this.entryCode = schoolNumber + sport.substring(0, 2) + venue.substring(0, 1);
+        return this.schoolNumber + this.sport.substring(0, 3).toUpperCase() + this.venue.substring(0, 1);
     }
 
     @Override
     public String toString() {
-        return "SportsCollector{" + "sport=" + sport + ", schoolNumber=" + schoolNumber + ", Venue=" + venue + ", entryCode=" + entryCode + '}';
+        return "SportsCollector{" + "sport=" + sport + ", schoolNumber=" + schoolNumber + ", Venue=" + venue + '}';
     }
 
 
