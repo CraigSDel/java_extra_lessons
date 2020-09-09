@@ -7,6 +7,18 @@ public class Subject {
     private String category;
     private boolean designated;
 
+    public Subject(int subjectID, String subjectName, String category) {
+        this.subjectID = subjectID;
+        this.subjectName = subjectName;
+        if (category != null || !category.isEmpty() || category.contains("*")) {
+            this.designated = true;
+            this.category = category.substring(category.indexOf("*"));
+        } else {
+            this.designated = false;
+            this.category = category;
+        }
+    }
+
     public Subject(int subjectID, String subjectName, String category, boolean designated) {
         this.subjectID = subjectID;
         this.subjectName = subjectName;
@@ -44,11 +56,11 @@ public class Subject {
 
         Scanner subject = new Scanner(subjectName).useDelimiter("*");
 
-        while(subject.hasNext()){
+        while (subject.hasNext()) {
 
             String Subject = subject.nextLine();
 
-            if(Subject.contains("*")){
+            if (Subject.contains("*")) {
                 designated = true;
             } else {
                 designated = false;
@@ -65,7 +77,11 @@ public class Subject {
 
     @Override
     public String toString() {
-        return "Subject{" + "subjectID=" + subjectID + ", subjectName=" + subjectName + ", category=" + category + ", designated=" + designated + '}';
+        if (designated) {
+            return subjectName + "\t" + " (" + category + ") \n\t" + "This is a designated subject";
+        } else {
+            return subjectName + "\t" + " (" + category + ") \n\t" + "This is not a designated subject";
+        }
     }
 
 }

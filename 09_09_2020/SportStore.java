@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class sportStroe {
+public class SportStore {
 
     String spName;
     int scCode;
