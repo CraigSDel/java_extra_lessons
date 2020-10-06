@@ -8,11 +8,10 @@ package web.app.craigstroberg.twentytwenty.july.july07;
 import java.util.Date;
 
 /**
- *
  * @author craigstroberg
  */
 public class Runner {
-    
+
     private String name;
     private Date dob;
 

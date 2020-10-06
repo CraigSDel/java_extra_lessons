@@ -18,7 +18,7 @@ public class SoccerMatch {
         jane.setGoals("13");
         jane.setTrophies("5");
         jane.setName("Pieter");
-        
+
         Player[] players = {jane, pieter};
 
         SoccerTeam soccerTeam = new SoccerTeam();

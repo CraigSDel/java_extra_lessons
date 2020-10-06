@@ -5,32 +5,32 @@ package web.app.craigstroberg.twentytwenty.july.july04;
 
 public class Runner {
 
-	private String name;
-	private Integer age;
+    private String name;
+    private Integer age;
 
-	public Runner(String n, Integer a){
-		name = n;
-		age = a;
-	}
+    public Runner(String n, Integer a) {
+        name = n;
+        age = a;
+    }
 
-	public void setName(String name){
-		this.name = name;	
-	}
+    public String getName() {
+        return name;
+    }
 
-	public String getName(){
-		return name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setAge(Integer age){
-		this.age = age;	
-	}
+    public Integer getAge() {
+        return age;
+    }
 
-	public Integer getAge(){
-		return age;
-	}
+    public void setAge(Integer age) {
+        this.age = age;
+    }
 
-	public String toString(){
-		return "toString - name: " + name + " age: " + age;
-	}
+    public String toString() {
+        return "toString - name: " + name + " age: " + age;
+    }
 }
 

@@ -4,49 +4,49 @@ package web.app.craigstroberg.twentytwenty.july.july02;
 
 public class Runner {
 
-	private String name;
-	private Integer age;
-	public String cellphone;
+    public String cellphone;
+    private String name;
+    private Integer age;
 
-	// private - only within the current class
-	// public - to everyone
-	// protected - to everyone in the same package or if they inherit the class
-	// default - to everyone in the same package
-	public Runner(String n, Integer a){
-		System.out.println("Printing what we sent to Runner Constructor");
-		System.out.println("n = " + n);
-		System.out.println("a = " + a);
+    // private - only within the current class
+    // public - to everyone
+    // protected - to everyone in the same package or if they inherit the class
+    // default - to everyone in the same package
+    public Runner(String n, Integer a) {
+        System.out.println("Printing what we sent to Runner Constructor");
+        System.out.println("n = " + n);
+        System.out.println("a = " + a);
 
-		System.out.println("Printing the name and age before we set it");
-		System.out.println("name = " + name);
-		System.out.println("age = " + age);
+        System.out.println("Printing the name and age before we set it");
+        System.out.println("name = " + name);
+        System.out.println("age = " + age);
 
-		name = n;
-		age = a;
+        name = n;
+        age = a;
 
-		System.out.println("Printing the name and age after we set it");
-		System.out.println("name = " + name);
-		System.out.println("age = " + age);
-	}
+        System.out.println("Printing the name and age after we set it");
+        System.out.println("name = " + name);
+        System.out.println("age = " + age);
+    }
 
-	public void setName(String name){
-		this.name = name;	
-	}
+    public String getName() {
+        return name;
+    }
 
-	public String getName(){
-		return name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setAge(Integer age){
-		this.age = age;	
-	}
+    public Integer getAge() {
+        return age;
+    }
 
-	public Integer getAge(){
-		return age;
-	}
+    public void setAge(Integer age) {
+        this.age = age;
+    }
 
-	public String toString(){
-		return "toString - name: " + name + " age: " + age + " cellphone " + cellphone;
-	}
+    public String toString() {
+        return "toString - name: " + name + " age: " + age + " cellphone " + cellphone;
+    }
 }
 

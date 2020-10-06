@@ -13,16 +13,16 @@ public class SportsCollector {
     private int schoolNumber;
     private String venue;
 
-    public static void main(String[] args) {
-        SportsCollector sportsCollector = new SportsCollector("Hockey", 5, "Jome");
-        System.out.println(sportsCollector.getEntryCode());
-        System.out.println(sportsCollector + " is your entry code.");
-    }
-
     public SportsCollector(String sport, int schoolNumber, String venue) {
         this.sport = sport;
         this.schoolNumber = schoolNumber;
         this.venue = venue;
+    }
+
+    public static void main(String[] args) {
+        SportsCollector sportsCollector = new SportsCollector("Hockey", 5, "Jome");
+        System.out.println(sportsCollector.getEntryCode());
+        System.out.println(sportsCollector + " is your entry code.");
     }
 
     public String getSport() {

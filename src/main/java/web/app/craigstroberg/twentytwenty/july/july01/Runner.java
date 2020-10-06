@@ -17,15 +17,15 @@ public class Runner {
         System.out.println("Hello " + name + ", you are a good runner. You run fast for a " + age + " year old.");
     }
 
+    public static String getName() {
+        return name;
+    }
+
     // when defining a method we need this
     // void - empty space - we are not going to return something
     // accessor returnType name(parameters)
     public static void setName(String Name) {
         name = Name;
-    }
-
-    public static String getName() {
-        return name;
     }
 
     // Primitives 	- byte, short, int, long, float, double, char, boolean

@@ -9,11 +9,10 @@ import java.util.Date;
 import java.util.Objects;
 
 /**
- *
  * @author craigstroberg
  */
 public class Animal {
-    
+
     private Date dateOfBirth;
     private String name;
     private String type;
@@ -78,5 +77,5 @@ public class Animal {
         final Animal other = (Animal) obj;
         return true;
     }
-    
+
 }

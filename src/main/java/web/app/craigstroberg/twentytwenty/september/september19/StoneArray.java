@@ -20,7 +20,7 @@ public class StoneArray {
         //     System.out.println(stones[i]);
         // }
 
-        char[] laceShortcut = {'J','a','n','e'};
+        char[] laceShortcut = {'J', 'a', 'n', 'e'};
 
         char[] lace = new char[4];
         lace[0] = 'J';
@@ -49,8 +49,8 @@ public class StoneArray {
         bag[0] = jane;
         bag[4] = sophie;
 
-        for (int i = 0; i < bag.length; i++ ) {
-          System.out.println("Stone index : " + i + " stone name " + bag[i]);
+        for (int i = 0; i < bag.length; i++) {
+            System.out.println("Stone index : " + i + " stone name " + bag[i]);
         }
     }
 }

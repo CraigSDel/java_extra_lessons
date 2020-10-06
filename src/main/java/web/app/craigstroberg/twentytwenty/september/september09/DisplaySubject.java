@@ -18,7 +18,7 @@ public class DisplaySubject {
                 category = "",
                 line = "";
 
-        while(scFile.hasNext()){
+        while (scFile.hasNext()) {
 
             line = scFile.nextLine();
 
@@ -32,7 +32,6 @@ public class DisplaySubject {
 
         }
     }
-
 
 
 }

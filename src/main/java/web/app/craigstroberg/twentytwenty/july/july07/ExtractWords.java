@@ -6,7 +6,6 @@
 package web.app.craigstroberg.twentytwenty.july.july07;
 
 /**
- *
  * @author craigstroberg
  */
 public class ExtractWords {

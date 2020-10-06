@@ -5,11 +5,7 @@
  */
 package web.app.craigstroberg.twentytwenty.july.july07;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 /**
- *
  * @author craigstroberg
  */
 public class ISP {
@@ -63,11 +59,7 @@ public class ISP {
         String[] numbers = ip.split("\\.");
         for (int i = 0; i < numbers.length; i++) {
             final Integer number = Integer.valueOf(numbers[i]);
-            if (-1 < number && Integer.valueOf(numbers[i]) < 256) {
-                valid = true;
-            } else {
-                valid = false;
-            }
+            valid = -1 < number && Integer.valueOf(numbers[i]) < 256;
         }
         return valid;
     }

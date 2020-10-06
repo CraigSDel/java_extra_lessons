@@ -6,7 +6,6 @@
 package web.app.craigstroberg.twentytwenty.july.july07;
 
 /**
- *
  * @author craigstroberg
  */
 public class StringToolsNS {
@@ -24,7 +23,7 @@ public class StringToolsNS {
     public void setString(String nS) {
         str = nS;
     }
-    
+
     public int countWords() {
         String temp = " " + str;
         int numWords = 0;
@@ -32,7 +31,7 @@ public class StringToolsNS {
         for (int loop = 1; loop < temp.length(); loop++) {
             prev = temp.charAt(loop - 1);
             curr = temp.charAt(loop);
-            if (Character.isLetter(prev) == false && 
+            if (Character.isLetter(prev) == false &&
                     (Character.isLetter(curr) == true || Character.isDigit(curr) == true)) {
                 numWords++; //numWords = numWords + 1;
             }//if
@@ -45,7 +44,7 @@ public class StringToolsNS {
         temp = temp.toLowerCase(); // HELLO -> hello  
         String newStr = "";
         char prev, curr;
-        
+
         for (int loop = 1; loop < temp.length(); loop++) {
             prev = temp.charAt(loop - 1);
             curr = temp.charAt(loop);
@@ -70,7 +69,7 @@ public class StringToolsNS {
             prev = temp.charAt(i - 1);
             curr = temp.charAt(i);
 
-            if (Character.isLetter(prev) == false && VOWELS.indexOf(curr) >= 0 
+            if (Character.isLetter(prev) == false && VOWELS.indexOf(curr) >= 0
                     || VOWELS.indexOf(curr) == -1) {
                 newStr = newStr + curr;
             }//if
@@ -99,11 +98,11 @@ public class StringToolsNS {
             prev = temp.charAt(loop - 1);
             curr = temp.charAt(loop);
             // check if the prev is not a letter and that the current is 
-            boolean prevIsACharacter = Character.isLetter(prev) ;
+            boolean prevIsACharacter = Character.isLetter(prev);
             boolean currentIsACharacter = Character.isLetter(curr);
             if (prevIsACharacter == false && currentIsACharacter == true) {
                 begin = loop; // set where we want to start chopping from
-            }            
+            }
             // inverse the above 
             // check if the prev is a letter and that the current is not
             if (prevIsACharacter == true && currentIsACharacter == false) {

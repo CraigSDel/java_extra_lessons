@@ -8,11 +8,8 @@ package web.app.craigstroberg.twentytwenty.july.july07;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
- *
  * @author craigstroberg
  */
 public class RunnerTest {
@@ -21,8 +18,8 @@ public class RunnerTest {
 //        exampleDateFormatter();
 //        Date addedDates = exampleAddingDates();
 //        System.out.println("Added Times " + addedDates);
-          long age = janesDob("1996/06/18");
-          System.out.println(new Date(age));
+        long age = janesDob("1996/06/18");
+        System.out.println(new Date(age));
     }
 
     private static void exampleDateFormatter() {
@@ -54,11 +51,11 @@ public class RunnerTest {
     private static Date exampleAddingDates() {
         final Date dateOne = new Date("1970/06/18");
         final Date dateTwo = new Date("1996/06/18");
-        System.out.println("dateOne - " + dateOne.getTime() );
-        System.out.println("dateTwo - " + dateTwo.getTime() );
+        System.out.println("dateOne - " + dateOne.getTime());
+        System.out.println("dateTwo - " + dateTwo.getTime());
         Long dateInTime = dateOne.getTime() + dateTwo.getTime();
         System.out.println("dateInTime " + dateInTime);
-       return new Date(dateInTime);
+        return new Date(dateInTime);
     }
 
     private static long janesDob(String string) {

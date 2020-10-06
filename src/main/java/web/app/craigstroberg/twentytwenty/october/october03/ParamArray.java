@@ -12,7 +12,7 @@ public class ParamArray {
         // they would like to insert into the system
         int howBig = Integer.parseInt(JOptionPane.showInputDialog("Enter the elements"));
         // int arr[] = new int[100];
-        int arr[] = new int[howBig];
+        int[] arr = new int[howBig];
         getValues(arr, howBig);
         display(arr, howBig);
     }

@@ -62,13 +62,7 @@ public class Subject {
 
             String Subject = subject.nextLine();
 
-            if (Subject.contains("*")) {
-                designated = true;
-            } else {
-                designated = false;
-
-
-            }
+            designated = Subject.contains("*");
         }
         return designated;
     }
